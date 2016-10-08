@@ -10,6 +10,7 @@ include("mod_wolfram.php");
 include("mod_karma.php");
 include("mod_tld.php");
 include("mod_info.php");
+include("mod_choice.php");
 
 $action = $_GET['action'];
 $args = $_GET['args'];
@@ -120,6 +121,9 @@ switch($action)
         break;
     case 'tld':
         output(tld($args));
+        break;
+    case 'choice':
+        output(choice($args));
         break;
     case 'karma':
     case 'karma?':

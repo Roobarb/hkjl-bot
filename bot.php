@@ -234,7 +234,7 @@ function choose($args) {
     $choices = explode(',', $args);
 
     if(count($choices)==1) {
-        return "[kies] Ben je kort ofzo? Geef me meerdere opties, gescheiden door komma's.";
+        return "[kies] Ben je lang ofzo? Geef me meerdere opties, gescheiden door komma's.";
     } else {
         return trim($choices[array_rand($choices)]);
     }

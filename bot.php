@@ -48,7 +48,7 @@ if(isset($_GET['data'])) {
 
         // Random chat triggers
         $message = trim($message);
-        if(($message=="ok"||$message=="oke") && rand(1,5)==4) output("is goed");
+        if(($message=="ok"||$message=="oke") && rand(1,4)==2) output("is goed");
         if(($message=="zeg dat wel")) output("dat wel");
         if(($message=="zeg het maar")) output("het maar");
     }
